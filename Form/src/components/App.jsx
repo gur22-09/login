@@ -17,7 +17,7 @@ function displayInput(){
 
 
   return (
-    <div className="container">
+    <div className="container">                                          
       <h1>Hello {name}</h1>
       <input onChange={getValue} 
       type="text" 
@@ -27,5 +27,16 @@ function displayInput(){
     </div>
   );
 }
-
+/*alternative using <form>
+<form onsubmit={displayInput}>
+<input onChange={getValue}
+       type='text'
+       value={input} />
+ <button>Submit</button>
+</form>
+function displayInput(event){
+setName(input);
+event.preventDefault();
+}
+*/
 export default App;
