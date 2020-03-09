@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "./Form";
-import '../../public/styles.css';
+
 
 var userIsRegistered = 0;
 
