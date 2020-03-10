@@ -16,6 +16,7 @@ function App() {
     setsavedList(prevList=>{
       return [...prevList,lists]
     });
+    setList('');
   }
 
 
