@@ -1,12 +1,12 @@
 import React from "react";
 
-function Form(props) {
+function Form({display,submit}) {
   return (
     <form className="form">
       <input type="text" placeholder="Username" />
       <input type="password" placeholder="Password" />
-      <input className={props.display} type="password" placeholder="Confirm Password" />
-      <button  type="submit">{props.submit}</button>
+      <input className={display} type="password" placeholder="Confirm Password" />
+      <button  type="submit">{submit}</button>
     </form>
   );
 }
